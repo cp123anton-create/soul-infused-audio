@@ -8,6 +8,7 @@ import cover6 from "@/assets/covers/nuns-reverent.png";
 import cover7 from "@/assets/covers/doom-scrolling.png";
 import cover8 from "@/assets/covers/sleep-bp.png";
 import cover9 from "@/assets/covers/ptsd.png";
+import cover10 from "@/assets/covers/midlife-romance.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -19,7 +20,7 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-const covers = [cover2, cover1, cover7, cover5, cover8, cover3, cover9, cover4, cover6];
+const covers = [cover2, cover1, cover10, cover7, cover5, cover8, cover3, cover9, cover4, cover6];
 
 function Index() {
   return (
@@ -54,8 +55,9 @@ function Index() {
           <Tile src={covers[5]} className="col-span-7 md:col-span-4 md:col-start-3 aspect-square mt-8" />
           <Tile src={covers[6]} className="col-span-5 md:col-span-3 md:col-start-8 aspect-square md:mt-20" />
 
-          <Tile src={covers[7]} className="col-span-6 md:col-span-3 md:col-start-4 aspect-square mt-8" />
-          <Tile src={covers[8]} className="col-span-6 md:col-span-4 md:col-start-7 aspect-square" />
+          <Tile src={covers[7]} className="col-span-6 md:col-span-3 md:col-start-3 aspect-square mt-8" />
+          <Tile src={covers[8]} className="col-span-6 md:col-span-3 md:col-start-6 aspect-square" />
+          <Tile src={covers[9]} className="col-span-12 md:col-span-3 md:col-start-9 aspect-square md:mt-16" />
         </div>
       </section>
 
