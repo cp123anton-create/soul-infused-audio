@@ -94,12 +94,12 @@ function Index() {
 
 function Tile({ src, className }: { src: string; className?: string }) {
   return (
-    <div className={`overflow-hidden ${className ?? ""}`}>
+    <div className={`flex items-center justify-center ${className ?? ""}`}>
       <img
         src={src}
         alt=""
         loading="lazy"
-        className="h-full w-full object-cover grayscale transition duration-1000 hover:grayscale-0 hover:scale-[1.02]"
+        className="max-h-full max-w-full object-contain grayscale transition duration-1000 hover:grayscale-0"
       />
     </div>
   );
