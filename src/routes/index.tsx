@@ -8,6 +8,7 @@ import cover6 from "@/assets/covers/nuns-reverent.png";
 import cover7 from "@/assets/covers/doom-scrolling.png";
 import cover8 from "@/assets/covers/sleep-bp.png";
 import cover9 from "@/assets/covers/ptsd.png";
+import cover10 from "@/assets/covers/midlife-romance.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -19,7 +20,7 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-const covers = [cover2, cover1, cover7, cover5, cover8, cover3, cover9, cover4, cover6];
+const covers = [cover2, cover1, cover10, cover7, cover5, cover8, cover3, cover9, cover4, cover6];
 
 function Index() {
   return (
