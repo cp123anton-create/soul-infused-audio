@@ -69,19 +69,14 @@ function Index() {
         </p>
       </section>
 
-      {/* Minimal facts + payouts */}
+      {/* Minimal facts — four lines */}
       <section className="px-8 pb-32">
-        <div className="mx-auto grid max-w-5xl gap-px overflow-hidden border-y border-border/60 md:grid-cols-2">
-          <ul className="grid grid-cols-1 gap-px bg-border/60 sm:grid-cols-3 md:grid-cols-1">
-            <Fact k="50/50" v="lifetime" />
-            <Fact k="free" v="production" />
-            <Fact k="spotify" v="audiobooks" />
-          </ul>
-          <div className="bg-background px-6 py-10 text-center">
-            <div className="font-display text-4xl text-gradient-gold md:text-5xl">quarterly</div>
-            <div className="mt-3 text-xs uppercase tracking-[0.4em] text-muted-foreground">payouts</div>
-          </div>
-        </div>
+        <ul className="mx-auto grid max-w-6xl gap-px overflow-hidden border-y border-border/60 text-sm md:grid-cols-4">
+          <Fact k="50/50" v="lifetime" />
+          <Fact k="free" v="production" />
+          <Fact k="spotify" v="audiobooks" />
+          <Fact k="quarterly" v="payouts" />
+        </ul>
       </section>
 
       {/* Contact — quiet */}
