@@ -69,13 +69,22 @@ function Index() {
         </p>
       </section>
 
-      {/* Minimal facts — three lines */}
+      {/* Minimal facts + payouts */}
       <section className="px-8 pb-32">
-        <ul className="mx-auto grid max-w-5xl gap-px overflow-hidden border-y border-border/60 text-sm md:grid-cols-3">
-          <Fact k="50/50" v="lifetime" />
-          <Fact k="free" v="production" />
-          <Fact k="spotify" v="audiobooks" />
-        </ul>
+        <div className="mx-auto grid max-w-5xl gap-px overflow-hidden border-y border-border/60 md:grid-cols-2">
+          <ul className="grid grid-cols-1 gap-px bg-border/60 sm:grid-cols-3 md:grid-cols-1">
+            <Fact k="50/50" v="lifetime" />
+            <Fact k="free" v="production" />
+            <Fact k="spotify" v="audiobooks" />
+          </ul>
+          <div className="bg-background px-6 py-10 text-center">
+            <div className="font-display text-4xl text-gradient-gold md:text-5xl">quarterly</div>
+            <div className="mt-3 text-xs uppercase tracking-[0.4em] text-muted-foreground">payouts</div>
+            <p className="mx-auto mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
+              Royalties paid every three months. Transparent statements. No lockups.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* Contact — quiet */}
