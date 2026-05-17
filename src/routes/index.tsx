@@ -80,9 +80,6 @@ function Index() {
           <div className="bg-background px-6 py-10 text-center">
             <div className="font-display text-4xl text-gradient-gold md:text-5xl">quarterly</div>
             <div className="mt-3 text-xs uppercase tracking-[0.4em] text-muted-foreground">payouts</div>
-            <p className="mx-auto mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Royalties paid every three months. Transparent statements. No lockups.
-            </p>
           </div>
         </div>
       </section>
